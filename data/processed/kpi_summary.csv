@@ -1,0 +1,27 @@
+kpi,value,unit
+Total Missions,15000.0,count
+Unique Drones,680.0,count
+Unique Customers,450.0,count
+Mission Success Rate,83.76666666666667,%
+Failure Rate,1.4266666666666667,%
+Delay Rate,14.133333333333335,%
+Cancellation Rate,0.6733333333333333,%
+Emergency Landing Rate,0.2866666666666667,%
+Fleet Availability Proxy,99.82169508505069,%
+Maintenance Due Rate,34.32,%
+Average Battery Health,89.58711066666667,%
+Average Battery Consumption,44.245054,%
+Average Payload Utilization,26.334856666666663,%
+Average Mission Duration,27.077905333333334,min
+Average Mission Distance,20.004886,km
+Average Signal Strength,82.66464466666666,%
+Average GPS Accuracy,0.9955006666666667,m
+Average Delay,4.051933333333333,min
+Total Downtime,59304.5,hours
+Maintenance Cost,11483544.15,INR
+Revenue,176973845.62,INR
+Operating Cost,22974466.490000002,INR
+Gross Margin,153999379.13,INR
+Gross Margin %,87.01815716920622,%
+Average Revenue per Mission,11798.256374666667,INR
+Average Customer Rating,4.376146050070474,rating

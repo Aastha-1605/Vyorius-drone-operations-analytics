@@ -1,0 +1,10 @@
+base_feature,importance
+days_since_last_service,0.941798646167222
+battery_health_pct,0.014160938850511989
+mission_duration_min,0.010517206810585312
+payload_utilization_pct,0.009976143321072257
+mission_distance_km,0.009840016653209199
+charge_cycles,0.00961516221141043
+drone_model,0.002682462978295103
+manufacturer,0.0010734039086375139
+platform_type,0.0003360190990560818

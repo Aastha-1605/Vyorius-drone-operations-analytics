@@ -1,0 +1,64 @@
+-- Create these as measures in Power BI after loading table 'drone_operations'
+
+Total Missions = COUNTROWS(drone_operations)
+Unique Drones = DISTINCTCOUNT(drone_operations[drone_id])
+Unique Customers = DISTINCTCOUNT(drone_operations[customer_id])
+
+Completed Missions =
+CALCULATE([Total Missions], drone_operations[mission_status] = "Completed")
+
+Failed Missions =
+CALCULATE([Total Missions], drone_operations[mission_status] = "Failed")
+
+Delayed Missions =
+CALCULATE([Total Missions], drone_operations[mission_status] = "Delayed")
+
+Mission Success Rate = DIVIDE([Completed Missions], [Total Missions])
+Failure Rate = DIVIDE([Failed Missions], [Total Missions])
+Delay Rate = DIVIDE([Delayed Missions], [Total Missions])
+
+Revenue = SUM(drone_operations[revenue_inr])
+Operating Cost = SUM(drone_operations[estimated_operating_cost_inr])
+Gross Margin = SUM(drone_operations[gross_margin_inr])
+Gross Margin % = DIVIDE([Gross Margin], [Revenue])
+Revenue per Mission = DIVIDE([Revenue], [Total Missions])
+
+Maintenance Cost = SUM(drone_operations[maintenance_cost_inr])
+Downtime Hours = SUM(drone_operations[downtime_hours])
+Average Battery Health = AVERAGE(drone_operations[battery_health_pct])
+Average Battery Consumption = AVERAGE(drone_operations[battery_consumed_pct])
+Average Payload Utilization = AVERAGE(drone_operations[payload_utilization_pct])
+Average Signal Strength = AVERAGE(drone_operations[signal_strength_pct])
+Average GPS Accuracy = AVERAGE(drone_operations[gps_accuracy_m])
+Average Delay Minutes = AVERAGE(drone_operations[delay_minutes])
+Average Customer Rating = AVERAGE(drone_operations[customer_rating])
+
+Maintenance Due Missions =
+CALCULATE([Total Missions], drone_operations[maintenance_due] IN {"Yes","True","1"})
+
+Maintenance Due Rate = DIVIDE([Maintenance Due Missions],[Total Missions])
+
+Emergency Landings =
+CALCULATE([Total Missions], drone_operations[emergency_landing] IN {"Yes","True","1"})
+
+Emergency Landing Rate = DIVIDE([Emergency Landings],[Total Missions])
+
+-- MRR PROXY: mission revenue by month. Do not call this true invoiced MRR.
+MRR Proxy = [Revenue]
+
+Previous Month Revenue =
+CALCULATE([Revenue], DATEADD('Date'[Date],-1,MONTH))
+
+MoM Revenue Growth =
+DIVIDE([Revenue]-[Previous Month Revenue],[Previous Month Revenue])
+
+Previous Year Revenue =
+CALCULATE([Revenue], DATEADD('Date'[Date],-1,YEAR))
+
+YoY Revenue Growth =
+DIVIDE([Revenue]-[Previous Year Revenue],[Previous Year Revenue])
+
+-- Fleet availability proxy. For a production system use actual scheduled/available hours.
+Fleet Availability Proxy =
+VAR FleetHours = [Unique Drones] * 24 * DISTINCTCOUNT('Date'[Date])
+RETURN 1 - DIVIDE([Downtime Hours], FleetHours)

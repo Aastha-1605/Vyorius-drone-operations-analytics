@@ -1,0 +1,13 @@
+mission_status,failure_reason,events
+Delayed,Battery Swap,546
+Delayed,Weather Hold,535
+Delayed,Operator Queue,524
+Delayed,Airspace Approval,515
+Failed,GPS Degradation,88
+Failed,High Wind,42
+Failed,Low Battery,23
+Failed,Motor Alert,15
+Failed,Payload Imbalance,15
+Failed,Communication Loss,12
+Failed,Geofence Restriction,11
+Failed,Sensor Fault,8
