@@ -204,16 +204,6 @@ git remote add origin https://github.com/YOUR_USERNAME/vyorius-drone-operations-
 git push -u origin main
 ```
 
-### D. Make the repository attractive
-- Pin the repository to your GitHub profile.
-- Add topics: `data-analytics`, `sql`, `python`, `power-bi`, `eda`, `machine-learning`, `drone-analytics`, `business-intelligence`.
-- Add the dashboard screenshot near the top of README.
-- Add a short **Key Insights** section before technical details.
-- Keep filenames clean and use relative image paths.
-- Do not upload proprietary or confidential internship data unless you have permission.
-
-## Interview Explanation — 60 Seconds
-> I analyzed 15,000 drone mission and telemetry records across a mixed fleet. I first created a KPI layer around mission success, delays, battery health, downtime, maintenance cost, revenue and margin. Then I used SQL for business questions such as vendor reliability, failure root causes, fleet utilization, industry economics and customer retention proxies. In Python I performed EDA and converted the analysis into a Power BI executive dashboard. For AI, I built a predictive-maintenance proof of concept using battery health, cycles and service history, and an AI-assisted scheduling score that prioritizes missions based on pre-flight risk such as wind, GPS, signal, battery and maintenance readiness. The final recommendations focused on predictive maintenance, workload balancing, cross-vendor telemetry standardization and a phased path toward autonomous mission planning.
 
 ## Tech Stack
 **SQL:** MySQL 8.0  
