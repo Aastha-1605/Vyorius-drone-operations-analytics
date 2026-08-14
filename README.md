@@ -49,11 +49,7 @@ This portfolio project analyzes a synthetic drone-operations dataset modeled aro
 ## Dashboard Preview
 ![Dashboard Preview](images/powerbi_dashboard_preview.png)
 
-The native `.pbix` file is not included because Power BI Desktop is required to author it. This repository includes:
-- exact **DAX measures**
-- a **page-by-page Power BI build guide**
-- a visual dashboard preview
-- a **hover-enabled interactive HTML dashboard** for GitHub Pages / portfolio demos
+
 
 Open: `dashboard/interactive_dashboard.html`
 
