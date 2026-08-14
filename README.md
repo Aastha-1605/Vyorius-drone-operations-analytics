@@ -159,32 +159,6 @@ Or open:
 notebooks/vyorius_eda_business_analysis.ipynb
 ```
 
-## Power BI Steps
-1. Open Power BI Desktop → **Get Data → Text/CSV**.
-2. Load `data/raw/vyorius_drone_operations_synthetic_2021_2026.csv`.
-3. In Power Query, set `mission_date` as Date and numeric KPI fields as Decimal/Whole Number.
-4. Create the Date table shown in `dashboard/powerbi_build_guide.md`.
-5. Create a one-to-many Date relationship.
-6. Paste measures from `dashboard/powerbi_measures.dax`.
-7. Build the five report pages from the guide.
-8. Create a report-page tooltip for richer hover details.
-9. Add slicers for year, manufacturer, model, industry, plan and mission type.
-10. Publish a screenshot/GIF to the README. If the data is safe to share, publish to Power BI Service and add the public portfolio link.
-
-## How to Upload This Project to GitHub
-### A. Create the repository
-1. GitHub → **New repository**.
-2. Repository name: `vyorius-drone-operations-analytics`
-3. Description: `End-to-end SQL, Python, Power BI and AI decision-support analysis of 15K+ drone missions.`
-4. Choose **Public** if the dataset is safe to share; otherwise keep data private/remove `data/raw`.
-5. Do **not** add another README if using this package.
-
-### B. Upload through GitHub website
-1. Open the new repository.
-2. **Add file → Upload files**.
-3. Drag the **contents** of this project folder, preserving folders.
-4. Commit message: `Initial end-to-end analytics project`
-5. Click **Commit changes**.
 
 ### C. Recommended Git workflow
 ```bash
