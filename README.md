@@ -36,7 +36,7 @@ This portfolio project analyzes a synthetic drone-operations dataset modeled aro
 | Avg battery health | 89.59% |
 | Maintenance due rate | 34.32% |
 
-> **MRR note:** the source file contains mission-level revenue, not subscription invoices. The dashboard therefore uses **MRR Proxy / Monthly Revenue Trend**, not audited MRR.
+
 
 ## Key Insights
 - **GPS degradation** is the largest failed-mission reason in the dataset; **high wind** is the next major failure driver.
