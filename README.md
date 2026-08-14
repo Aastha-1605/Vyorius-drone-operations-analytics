@@ -65,7 +65,6 @@ Holdout POC performance on this dataset:
 - **ROC-AUC: 0.987**
 - **Accuracy: 0.990**
 
-
 ### 2. AI-Assisted Mission Scheduling
 Instead of claiming an autonomous scheduler, the project builds a **risk-scoring layer**. Each candidate mission gets a pre-flight risk score from:
 - wind
