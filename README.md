@@ -160,16 +160,6 @@ notebooks/vyorius_eda_business_analysis.ipynb
 ```
 
 
-### C. Recommended Git workflow
-```bash
-git init
-git add .
-git commit -m "Initial end-to-end analytics project"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/vyorius-drone-operations-analytics.git
-git push -u origin main
-```
-
 
 ## Tech Stack
 **SQL:** MySQL 8.0  
@@ -178,4 +168,4 @@ git push -u origin main
 **Concepts:** KPI design, EDA, RCA, customer/financial analytics, fleet optimization, predictive maintenance, AI-assisted scheduling
 
 ---
-*Portfolio project based on a synthetic dataset. Validate all operational/financial assumptions before using in a real flight operation.*
+
