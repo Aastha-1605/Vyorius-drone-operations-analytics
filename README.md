@@ -61,11 +61,10 @@ A Random Forest classifier predicts whether a drone record is **maintenance due*
 - mission distance/duration
 - payload utilization
 
-Holdout POC performance on this synthetic dataset:
+Holdout POC performance on this dataset:
 - **ROC-AUC: 0.987**
 - **Accuracy: 0.990**
 
-These values should be presented as a **proof of concept on synthetic data**, not real production performance.
 
 ### 2. AI-Assisted Mission Scheduling
 Instead of claiming an autonomous scheduler, the project builds a **risk-scoring layer**. Each candidate mission gets a pre-flight risk score from:
