@@ -51,8 +51,6 @@ This portfolio project analyzes a synthetic drone-operations dataset modeled aro
 
 
 
-Open: `dashboard/interactive_dashboard.html`
-
 ## AI / ML: What Was Actually Done
 ### 1. Predictive Maintenance
 A Random Forest classifier predicts whether a drone record is **maintenance due** using only pre-maintenance features such as:
